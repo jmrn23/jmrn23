@@ -11,6 +11,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.Qt import QUrl, QDesktopServices
 import requests
 import sys
+import webbrowser
 
 
 
@@ -57,6 +58,9 @@ class MainWindow(QWidget):
             QMessageBox.about(self, "Error", "Please fill the field")
         else:
             res= self.__query(host_IP,API_key,hostname)
+            if res :
+                webbrowser.open("https://www.openstreetmap.org/?mlat=%s" % (res["Latitude"]) + "&mlon=%s" % res["Longitude"] + "#map=12")
+
 
     def __query(self,host_IP,API_key, hostname):
         url = "http://%s" % (hostname) + "/ip/%s?" % (host_IP) + "key=%s" % (API_key)
