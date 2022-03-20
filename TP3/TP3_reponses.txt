@@ -1,0 +1,5 @@
+1)Un Web service, est un protocole informatique permettant à des applications écrites en différents langages de programmation de communiquer et de s’échanger des données entre elles.
+
+2)Un API REST est défini comme une interface de programmation d’application qui respecte une architecture REST qui permet aux logiciels de communiquer entre eux sur un réseau ou sur un même appareil.
+
+3)FastAPI est un framework web permettant de développer des API en python. Il est très rapide et facile à utiliser.
