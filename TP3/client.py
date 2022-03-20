@@ -54,7 +54,7 @@ class MainWindow(QWidget):
         hostname = self.text3.text()
 
 
-        if hostname == "":
+        if hostname == "" or API_key=="" or host_IP=="":
             QMessageBox.about(self, "Error", "Please fill the field")
         else:
             res= self.__query(host_IP,API_key,hostname)
