@@ -11,5 +11,5 @@ for filename in os.listdir(dir_path + "\\bot"):
     if(filename.endswith('.py')):
          client.load_extension(f'bot.{filename[:-3]}')
 
-client.run("OTU5MzUwNTA0NzgwMDk1NTM4.YkamyA.ssvnpxUN1JLoqaSSKalcMLsbQY8")
+client.run("YOUR TOKEN")
 
